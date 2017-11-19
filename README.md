@@ -1,2 +1,2 @@
-# project5
-Project 5 repository
+molecular-dynamics-fys3150
+==========================
