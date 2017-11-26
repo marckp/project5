@@ -38,7 +38,10 @@ int main(int numberOfArguments, char **argumentList)
     system.potential().setSigma(1.0);
 
     system.removeTotalMomentum();
+<<<<<<< HEAD
     cout << "Total momentum: " << system.m_momentum << endl;
+=======
+>>>>>>> Intial Install of Project 5 software
 
     StatisticsSampler statisticsSampler;
     IO movie("movie.xyz"); // To write the state to file
@@ -49,12 +52,19 @@ int main(int numberOfArguments, char **argumentList)
             setw(20) << "KineticEnergy" <<
             setw(20) << "PotentialEnergy" <<
             setw(20) << "TotalEnergy" << endl;
+<<<<<<< HEAD
     for(int timestep=0; timestep<1000; timestep++)
     {
         system.step(dt); // where the action is
         statisticsSampler.sample(system);
         if( timestep % 100 == 0 )
         {
+=======
+    for(int timestep=0; timestep<1000; timestep++) {
+        system.step(dt);
+        statisticsSampler.sample(system);
+        if( timestep % 100 == 0 ) {
+>>>>>>> Intial Install of Project 5 software
             // Print the timestep every 100 timesteps
             cout << setw(20) << system.steps() <<
                     setw(20) << system.time() <<

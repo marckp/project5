@@ -24,7 +24,10 @@ public:
     void removeTotalMomentum();
     void calculateForces();
     void step(double dt);
+<<<<<<< HEAD
     vec3 m_momentum;
+=======
+>>>>>>> Intial Install of Project 5 software
 
     // Setters and getters
     std::vector<Atom *> &atoms() { return m_atoms; } // Returns a reference to the std::vector of atom pointers
