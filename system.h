@@ -24,6 +24,7 @@ public:
     void removeTotalMomentum();
     void calculateForces();
     void step(double dt);
+    vec3 m_momentum;
 
     // Setters and getters
     std::vector<Atom *> &atoms() { return m_atoms; } // Returns a reference to the std::vector of atom pointers
